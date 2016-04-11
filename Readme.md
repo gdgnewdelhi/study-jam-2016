@@ -63,6 +63,6 @@ Central repository for all final project built at the end of Study JAM held in N
 
 16. Boom ! You are done.
 
----
+-
 
->Repeat steps 10 and 11 as you make more changes and commit more on your branch. Your commits on the branch you created are all available to us since the time you created a pull request.
+**Repeat steps 10 and 11 as you make more changes and commit more on your branch. Your commits on the branch you created are all available to us since the time you created a pull request.**
