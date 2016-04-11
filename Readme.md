@@ -16,13 +16,13 @@ Central repository for all final project built at the end of Study JAM held in N
 7. If you reached till this step , then sit back and have a cookies for you did good work!  :D
 
 
-### Long version Cheatsheet to create a pull request ( for those hwo are new this :P )
+### Long version Cheatsheet to create a pull request (for those who are new to this)
 1. Open [github](https://github.com)
 2. Signup/Login as a user
 3. Goto the [Study JAM Repository](https://github.com/GDGND/study-jam-2016)
 4. Fork the repository
 5. Now copy the clone url of this newly created repository , provided on github
-	![clone url][cloneurl.jpeg]
+	![clone url](https://github.com/GDGND/study-jam-2016/raw/master/cloneurl.jpeg)
 6. Open up terminal and clone the repository using the copied url
 	```bash
 	git clone https://github.com/<username>/study-jam-2016
