@@ -22,6 +22,7 @@ Central repository for all final project built at the end of Study JAM held in N
 3. Goto the [Study JAM Repository](https://github.com/GDGND/study-jam-2016)
 4. Fork the repository
 5. Now copy the clone url of this newly created repository , provided on github
+
 	![clone url](https://github.com/GDGND/study-jam-2016/raw/master/cloneurl.jpeg)
 6. Open up terminal and clone the repository using the copied url
 	```bash
