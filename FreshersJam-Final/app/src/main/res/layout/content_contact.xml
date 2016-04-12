@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentcontact"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7FFEB"
+    tools:context="com.example.azfar.freshersjam_final.JamActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/header" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/gotoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/gotoJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Jam"
+            android:text="The Jam" />
+
+        <Button
+            android:id="@+id/gotoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Events"
+            android:text="Events" />
+
+        <Button
+            android:id="@+id/gotoContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Contact"
+            android:text="Contact" />
+
+        <Button
+            android:id="@+id/gotoAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="About"
+            android:text="About" />
+
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menubar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/downloads"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/header">
+
+
+            <TextView
+                android:id="@+id/jamheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Contact Us"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="28sp" />
+
+
+            <TextView
+                android:id="@+id/jamtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jamheader"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="georgia"
+                android:padding="5dp"
+                android:text="In case of any query, we at Fresher's Jam are always just a mail away. Moreover, if you wish to send us a feedback or suggestions for improvement, we'd be more than happy. Also, if you wish to be a part of Team Freshers' Jam, here's how to go about it.\n\nJust drop us an e-mail! You may easily find us at the following:\n\n \tsupport@freshersjam.com\n\n \tfeedback@freshersjam.com"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

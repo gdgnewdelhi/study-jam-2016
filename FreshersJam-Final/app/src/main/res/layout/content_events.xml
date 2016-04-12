@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentevents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7FFEB"
+    tools:context="com.example.azfar.freshersjam_final.JamActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/header" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/gotoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/gotoJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Jam"
+            android:text="The Jam" />
+
+        <Button
+            android:id="@+id/gotoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Events"
+            android:text="Events" />
+
+        <Button
+            android:id="@+id/gotoContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Contact"
+            android:text="Contact" />
+
+        <Button
+            android:id="@+id/gotoAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="About"
+            android:text="About" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/menubar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/downloads"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/header">
+
+
+            <TextView
+                android:id="@+id/eventheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Events at Jamia"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="28sp" />
+
+
+            <TextView
+                android:id="@+id/eventtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/eventheader"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="georgia"
+                android:padding="5dp"
+                android:text="We at Jamia are staunch beleivers of the saying - 'All work and no play makes Jack a dull boy'. And therefore, studies at Jamia are incomparably interwoven with extra-curricular activities and events. \n\n Here at Jamia, we have various student societies and clubs which conduct their own fests, workshops, seminars and other such events. \n\n To mention a few of them - \n\nIndian Society for Technical Education(ISTE)\n Computer Society of India(CSI)\nRobotic Society of India(RSI)\n IEEE\nStudents Union Of Jamia\n\nThe events conducted by the above-mentioned societies are respectively as follows:\n\n\n"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/tripster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4caf50"
+                android:onClick="Tripster"
+                android:paddingRight="80dp"
+                android:paddingLeft="80dp"
+                android:text="Tripster"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/eventtext"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/algorhythm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4caf50"
+                android:onClick="AlgoRhythm"
+                android:paddingRight="80dp"
+                android:paddingLeft="80dp"
+                android:text="AlgoRhythm"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/tripster"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/robocon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4caf50"
+                android:onClick="Robocon"
+                android:paddingRight="80dp"
+                android:paddingLeft="80dp"
+                android:text="Robocon"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/algorhythm"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/encomium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4caf50"
+                android:onClick="Encomium"
+                android:paddingRight="80dp"
+                android:paddingLeft="80dp"
+                android:text="Encomium"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/robocon"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/tangelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4caf50"
+                android:onClick="Tangelo"
+                android:paddingRight="80dp"
+                android:paddingLeft="80dp"
+                android:text="Tangelo Town"
+                android:layout_marginBottom="30dp"
+                android:layout_below="@id/encomium"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

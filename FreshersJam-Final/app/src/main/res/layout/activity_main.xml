@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7FFEB"
+    tools:context="com.example.azfar.thatsmychoice.MainActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/header" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/gotoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/gotoJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Jam"
+            android:text="The Jam" />
+
+        <Button
+            android:id="@+id/gotoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Events"
+            android:text="Events" />
+
+        <Button
+            android:id="@+id/gotoContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Contact"
+            android:text="Contact" />
+
+        <Button
+            android:id="@+id/gotoAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="About"
+            android:text="About" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menubar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="fill_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/circles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bc1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/blackcircle" />
+
+                    <TextView
+                        android:id="@+id/tx1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/bc1"
+                        android:layout_alignLeft="@id/bc1"
+                        android:layout_alignRight="@id/bc1"
+                        android:layout_alignTop="@id/bc1"
+                        android:layout_margin="2dp"
+                        android:fontFamily="georgia"
+                        android:gravity="center"
+                        android:text="Notes"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bc1"
+                    android:paddingBottom="35dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="30dp"
+                    android:text="+"
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/bc2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/blackcircle" />
+
+                    <TextView
+                        android:id="@+id/tx2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/bc2"
+                        android:layout_alignLeft="@id/bc2"
+                        android:layout_alignRight="@id/bc2"
+                        android:layout_alignTop="@id/bc2"
+                        android:layout_margin="2dp"
+                        android:fontFamily="georgia"
+                        android:gravity="center"
+                        android:text="Events"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/equals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/bc2"
+                    android:paddingBottom="35dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="30dp"
+                    android:text="="
+                    android:textColor="#000000"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/bc3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/equals"
+                    android:src="@drawable/fjlogo" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/heading1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tx1"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Where are you?"
+                android:textColor="#F44336"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/para1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading1"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="georgia"
+                android:text="You are here at FreshersJam, Jamia Millia Islamia's first online resource center which has unmatched reputation of being the best platform of its type."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/heading2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/para1"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Who are we?"
+                android:textColor="#F44336"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/para2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading2"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="georgia"
+                android:text="We are currently an association of students of Faculty of Engineering and Technology, Jamia Millia Islamia."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/heading3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/para2"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="What do we do?"
+                android:textColor="#F44336"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/para3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heading3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="georgia"
+                android:text="We provide resources for preparing for examinations. Apart from this we also provide regular updates about activities in the university. Further we also provide a knowledge base which enables you to learn essentials of the university and course specific tips."
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lastline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/para3"
+                android:layout_centerHorizontal="true"
+                android:background="#f44336"
+                android:fontFamily="georgia"
+                android:paddingBottom="20dp"
+                android:text="Okay then! Let the exploration begin!"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

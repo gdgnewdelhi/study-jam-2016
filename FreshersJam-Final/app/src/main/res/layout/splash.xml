@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7FFEB">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:contentDescription="Freshers Jam"
+        android:layout_height="150dp"
+        android:paddingTop="0dp"
+        android:src="@drawable/fjlogo"
+        android:layout_above="@+id/center_text"
+        android:layout_alignRight="@+id/center_text"
+        android:layout_alignEnd="@+id/center_text"
+        android:layout_alignLeft="@+id/center_text"
+        android:layout_alignStart="@+id/center_text"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/center_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="georgia"
+        android:text="Fresher's Jam"
+        android:textColor="#d50000"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        android:layout_above="@+id/tagline"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="georgia"
+        android:paddingBottom="4dp"
+        android:paddingRight="20dp"
+        android:paddingTop="4dp"
+        android:text="Don't worry! We've got your jam!"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/tagline" />
+
+</RelativeLayout>

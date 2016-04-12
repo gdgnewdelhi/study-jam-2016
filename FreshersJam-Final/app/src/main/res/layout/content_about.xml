@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentabout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7FFEB"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.azfar.freshersjam_final.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/header" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/gotoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/gotoJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Jam"
+            android:text="The Jam" />
+
+        <Button
+            android:id="@+id/gotoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Events"
+            android:text="Events" />
+
+        <Button
+            android:id="@+id/gotoContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Contact"
+            android:text="Contact" />
+
+        <Button
+            android:id="@+id/gotoAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="About"
+            android:text="About" />
+
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menubar"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="The Team"
+                android:textAlignment="center"
+                android:textColor="#f44336"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Shuja Abbas - B.Tech. (Mechanical Engineering), Faculty of Engineering and Technology, Jamia Millia Islamia"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Mohd Sadiq - B.Tech. (Computer Engineering), Faculty of Engineering and Technology, Jamia Millia Islamia"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Azfar Zaidi - B.Tech. (Computer Engineering), Faculty of Engineering and Technology, Jamia Millia Islamia"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Murtaza Hasan - B.Tech. (Computer Engineering), Faculty of Engineering and Technology, Jamia Millia Islamia"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

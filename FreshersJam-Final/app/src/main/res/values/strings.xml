@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FreshersJam-Final</string>
+    <string name="title_activity_jam">JamActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_events">EventsActivity</string>
+</resources>

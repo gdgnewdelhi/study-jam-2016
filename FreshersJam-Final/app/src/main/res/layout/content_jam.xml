@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentjam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A7FFEB"
+    tools:context="com.example.azfar.freshersjam_final.JamActivity">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/header" />
+
+    <LinearLayout
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/gotoHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/gotoJam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Jam"
+            android:text="The Jam" />
+
+        <Button
+            android:id="@+id/gotoEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Events"
+            android:text="Events" />
+
+        <Button
+            android:id="@+id/gotoContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="Contact"
+            android:text="Contact" />
+
+        <Button
+            android:id="@+id/gotoAbout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4caf50"
+            android:onClick="About"
+            android:text="About" />
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menubar"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/downloads"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/header">
+
+
+            <TextView
+                android:id="@+id/jamheader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="The Jam"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="32sp" />
+
+
+            <TextView
+                android:id="@+id/jamtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jamheader"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="georgia"
+                android:padding="5dp"
+                android:text="Yes Freshers keep calm we've got your Jam . Sit back and relax. Have a walk and get your Jam. Download what you want and keep it but for your exam hall :P. Now you don't have to count on your pocket to get these notes from the packed up Xerox point. We've got them for you!"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/downloadheading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jamtext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="georgia"
+                android:text="Downloads for B.Tech"
+                android:textColor="#F44336"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/physics1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/downloadheading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Physics - Semester 1"
+                android:textColor="#F44336"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/boptics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/physics1"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Optics"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/belectro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/boptics"
+                android:layout_centerHorizontal="true"
+                android:onClick="Electrodynamics"
+                android:padding="20dp"
+                android:text="Electrodynamics"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/physics2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/belectro"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Physics - Semester 2"
+                android:textColor="#F44336"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/bnrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/physics2"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Non-relativistic transformation"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/blt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bnrt"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Lorentz transformation"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/blasers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/blt"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Lasers"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bpos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/blasers"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Physics of solids"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bass2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bpos"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Assignment - unit 2"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bass4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bass2"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Assignment - unit 4"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/chemistry1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bass4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Chemistry - Semester 1"
+                android:textColor="#F44336"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/bu1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chemistry1"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Unit 1"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bu1"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Solid State - unit 2"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bu34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bss"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Unit 3 and 4"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bcc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bu34"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Co-ordinate Compounds"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bck1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bcc3"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Chemical kinetics"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/chemistry2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bck1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Chemistry - Semester 2"
+                android:textColor="#F44336"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/btow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chemistry2"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Treatment of water"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bfac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btow"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Fuel and Combustion"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bcement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bfac"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Cements"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/lubricant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bcement"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Lubricants"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/bsteel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lubricant"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Steel"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/maths1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bsteel"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Mathematics - Semester 1"
+                android:textColor="#F44336"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/bid1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maths1"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Notebook - Idris Sir"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/maths2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bid1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="georgia"
+                android:padding="10dp"
+                android:text="Mathematics - Semester 2"
+                android:textColor="#F44336"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/bid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/maths2"
+                android:layout_centerHorizontal="true"
+                android:padding="20dp"
+                android:text="Notebook - Idris Sir"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
