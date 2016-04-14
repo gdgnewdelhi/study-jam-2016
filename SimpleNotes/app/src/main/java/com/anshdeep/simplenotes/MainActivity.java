@@ -86,17 +86,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        if (initialCount >= 0) {
-            notes = Note.listAll(Note.class);
-//
-
-            archives = Archive.listAll(Archive.class);
-            reminders = Reminder.listAll(Reminder.class);
-            adapter = new NotesAdapter(MainActivity.this, notes);
-            recyclerView.setAdapter(adapter);
-        } else {
-            Snackbar.make(recyclerView, "No notes added.", Snackbar.LENGTH_SHORT).show();
-        }
+        notes = Note.listAll(Note.class);
+        archives = Archive.listAll(Archive.class);
+        reminders = Reminder.listAll(Reminder.class);
+        adapter = new NotesAdapter(MainActivity.this, notes);
+        recyclerView.setAdapter(adapter);
 
         /*
         recycler view.onClick
@@ -288,7 +282,7 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.menu_remove:
                     adapter.removeItems(adapter.getSelectedItems());
-                    Snackbar.make(recyclerView,"Selected notes deleted",Snackbar.LENGTH_SHORT).show();
+                    Snackbar.make(recyclerView, "Selected notes deleted", Snackbar.LENGTH_SHORT).show();
                     mode.finish();
                     return true;
 
@@ -446,7 +440,6 @@ public class MainActivity extends AppCompatActivity {
 //        }
 //        return filteredNoteList;
 //    }
-
 
 
     @Override

@@ -61,6 +61,9 @@
             android:parentActivityName=".MainActivity"
             android:label="@string/title_activity_reminder"
             android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
 
         <receiver
