@@ -1,0 +1,294 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#8080ff">
+
+
+
+
+    //screen 1
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/icon1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/beg"
+        android:visibility="visible"/>//set the visiblity to visible
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="BodyFact"
+        android:id="@+id/introtext"
+        android:paddingTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textSize="50sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:id="@+id/introtext2"
+        android:text="Developed By : Macinashutosh"
+        android:padding="20dp"
+        android:textStyle="bold" />
+
+    //screen 2 starts here...
+    <ImageView
+        android:id="@+id/BodyMassIndex"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src = "@drawable/body"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:textSize="20sp"
+        android:id="@+id/intro1"
+        android:textColor="#000000"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="The Body mass Index (BMI) or Quetelet index is a value derived from the mass and height of an indivisual \n "
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="BMI = Weight/Height^2"
+        android:textColor="#000000"
+        android:id="@+id/intro2"
+        android:layout_below="@+id/intro1"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Got it!"
+        android:layout_alignParentBottom="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:background="#8080ff"
+        android:id="@+id/got_it_button"/>
+
+    //screen 3 starts here
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/editText1"
+                android:visibility="gone"
+                android:hint=" Height"
+                android:textColor="#000000"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:id="@+id/cms_view"
+                android:textColor="#000000"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:text="cms."/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:id="@+id/editText2"
+                android:visibility="gone"
+                android:textColor="#000000"
+                android:inputType="numberDecimal"
+                android:layout_weight="1"
+                android:hint="Weight"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_toRightOf="@+id/radio"
+                android:layout_toEndOf="@+id/radio" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:id="@+id/kgs"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:text="Kgs."
+                android:layout_alignBottom="@+id/editText2"
+                android:layout_alignRight="@+id/editText2"
+                android:layout_alignEnd="@+id/editText2" />
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/radio">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender :"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/male_radio"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="120dp"
+                android:text="Male"
+                android:textColor="#000000"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/female_radio"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="120dp"
+                android:text="Female"
+                android:textColor="#000000"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="SUBMIT"
+        android:visibility="gone"
+        android:background="#8080ff"
+        android:id="@+id/submit_button"
+        android:layout_alignParentBottom="true"/>
+
+    //Screen 4
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4"
+        android:layout_gravity="center_horizontal"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/BodyMassIndex"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bm1"
+                android:id="@+id/bm1"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bm2"
+                android:id="@+id/bm2"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bm3"
+                android:id="@+id/bm3"
+                android:layout_gravity="center_horizontal"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bm4"
+                android:id="@+id/bm4"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="20sp"
+                android:text="hello"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:id="@+id/bmi_text"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"
+                android:text="RESET"
+                android:background="#8080ff"
+                android:id="@+id/reset_button"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
