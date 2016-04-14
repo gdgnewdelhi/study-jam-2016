@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.bitbucket.alphasniper.workoutkeeper.LogActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/add_workout_log_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Add a workout Log"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/notes_edit_text_view"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_workout_log_text_view"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:hint="Notes"
+            android:inputType="textCapCharacters"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/log_edit_text_view"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/add_workout_log_text_view"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:hint="Log"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:id="@+id/add_log_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/log_edit_text_view"
+            android:layout_margin="10dp"
+            android:text="save" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Logs"
+            android:ellipsize="marquee"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/logs_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

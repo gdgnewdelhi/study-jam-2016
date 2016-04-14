@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Workout Keeper</string>
+    <string name="best_practise">Best Workout Practices</string>
+    <string name="pullup">Pull Up</string>
+    <string name="pushup">Push Up</string>
+    <string name="crunches">Crunches</string>
+    <string name="bench_press">Bench Press</string>
+    <string name="squats">Squats</string>
+    <string name="card1_header">When to workout?</string>
+    <string name="card2_header">What exercises ?</string>
+    <string name="card3_header">What to eat and drink ?</string>
+    <string name="card4_header">Progression.</string>
+    <string name="card5_header">Warming up for heavy sets.</string>
+    <string name="card1_body">Workout in the morning when growth hormone levels are at their highest. Keep workouts under 60 minutes. After 60 minutes the levels of muscle building and fat burning hormones (like growth hormone and testosterone) begin to drop.</string>
+    <string name="card2_body">Concentrate on compound exercises like the squat, deadlift, bench press and row. These compound exercises work multiple muscles all at once, therefore getting the most out of your exercise session in the least amount of time.</string>
+    <string name="card3_body">Exercise on an empty stomach for weight loss. When you first wake up, your carbohydrate stores will be depleted (your body prefers carbs for fuel), and your body goes straight to the fat stores for fuel to get through the workout. If you can\'t workout in the a.m., wait at least three hours after a meal before exercising.Upon waking, you are dehydrated, so drink 16 ounces of ice water. Why ice water? Ice water is around 40 degrees Fahrenheit and your system has to heat it to 98.6 degrees. This process requires almost one calorie to warm one ounce of ice water, so an 8 ounce glass burns eight calories. Drink 16 glasses (128 ounces) and burn 128 calories.Talk about a negative calorie food!
+                                Once in a while I\'ll add a lemon or bottled lemon juice and a little splenda to my water.Continue to drink ice cold water throughout your workout, and the rest of the day, staying hydrated.</string>
+    <string name="card4_body">You must progress in every workout. You progress by either adding weight, adding reps, or doing more work in less time. You must push yourself to improve your performance from workout to workout.</string>
+    <string name="card5_body">Do arm circles, leg and foot circles, bodyweight squats, walk or run on treadmill, etc. Get the blood flowing into your muscles.</string>
+
+</resources>

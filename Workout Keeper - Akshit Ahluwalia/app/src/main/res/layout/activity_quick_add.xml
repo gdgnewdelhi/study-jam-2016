@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coupunz.fitlog.fitlog.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/quick_add_focus_items"
+                android:layout_width="0dp"
+                android:id="@+id/btn_best_practices"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF8A80"
+                android:onClick="howToWorkoutGuideViewClicked"
+                android:text="@string/best_practise"
+                android:textColor="#D50000" />
+
+
+            <Button
+                android:id="@+id/btn_pushup"
+                style="@style/quick_add_focus_items"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FF80AB"
+                android:onClick="pushupViewClicked"
+                android:text="@string/pushup"
+                android:textColor="#C51162" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_pullup"
+                style="@style/quick_add_focus_items"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#F4FF81"
+                android:onClick="pullupViewClicked"
+                android:text="@string/pullup"
+                android:textColor="#827717" />
+
+            <Button
+                android:id="@+id/btn_benchpress"
+                style="@style/quick_add_focus_items"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#CCFF90"
+                android:onClick="benchpressViewClicked"
+                android:text="@string/bench_press"
+                android:textColor="#33691E" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_crunches"
+                style="@style/quick_add_focus_items"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#80D8FF"
+                android:onClick="crunchesViewClicked"
+                android:text="@string/crunches"
+                android:textColor="#01579B" />
+
+            <Button
+                android:id="@+id/btn_squats"
+                style="@style/quick_add_focus_items"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#FFD180"
+                android:onClick="squatsViewClicked"
+                android:text="@string/squats"
+                android:textColor="#E65100" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_credits"
+            style="@style/quick_add_focus_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#F5F5F5"
+            android:text="Developed By #alphaSniper"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+</ScrollView>
