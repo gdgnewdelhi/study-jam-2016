@@ -12,10 +12,13 @@ public class Reminder extends SugarRecord {
 
     }
 
+
+
     public Reminder(String title, String body) {
         this.title = title;
         this.body = body;
     }
+
 
     public String getTitle() {
         return title;
