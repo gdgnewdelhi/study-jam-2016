@@ -216,8 +216,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, AddNoteActivity.class);
                 i.putExtra("isEditing", true);
                 i.putExtra("note_title", notes.get(position).title);
-                i.putExtra("note", notes.get(position).note);
-                i.putExtra("note_time", notes.get(position).time);
+
 
 
                 modifyPos = position;
@@ -285,6 +284,7 @@ public class MainActivity extends AppCompatActivity {
                     Snackbar.make(recyclerView, "Selected notes deleted", Snackbar.LENGTH_SHORT).show();
                     mode.finish();
                     return true;
+
 
                 default:
                     return false;

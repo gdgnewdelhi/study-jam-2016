@@ -121,8 +121,10 @@ public class AddReminderActivity extends AppCompatActivity {
             desc = getIntent().getStringExtra("reminder_body");
 
 
+
             etTitle.setText(title);
             etDesc.setText(desc);
+
 
         }
 
@@ -153,6 +155,7 @@ public class AddReminderActivity extends AppCompatActivity {
                             Log.d("got reminder", "reminder: " + reminder.title);
                             reminder.title = newTitle;
                             reminder.body = newDesc;
+
                             reminder.save();
 
                         }

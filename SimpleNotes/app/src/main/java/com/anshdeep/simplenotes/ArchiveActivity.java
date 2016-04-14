@@ -104,12 +104,15 @@ public class ArchiveActivity extends AppCompatActivity {
         super.onResume();
 
         final long newCount = Archive.count(Archive.class);
+        Log.d("ArchiveActivity","Archive count: " + newCount);
 
         //make list empty and refreshing recyler view
-        if(newCount==0){
-            archives.clear();
-            mArchiveAdapter.notifyDataSetChanged();
-        }
+//        if(newCount==0){
+//            archives.clear();
+//            mArchiveAdapter.notifyDataSetChanged();
+//        }
+
+        archives = Archive.listAll(Archive.class);
         mArchiveAdapter.notifyDataSetChanged();
 
         Log.d("ArchiveActivity", "archives size: " + archives.size());

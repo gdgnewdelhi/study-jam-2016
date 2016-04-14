@@ -19,6 +19,9 @@ import java.util.Random;
 public class NotesAdapter extends SelectableAdapter<NotesAdapter.NoteVH>  {
     Context context;
     List<Note> notes;
+    List<Archive> archives =  Archive.listAll(Archive.class);
+
+
 
     @SuppressWarnings("unused")
     private static final String TAG = NotesAdapter.class.getSimpleName();
@@ -81,6 +84,8 @@ public class NotesAdapter extends SelectableAdapter<NotesAdapter.NoteVH>  {
         }
     }
 
+
+
     private void removeRange(int positionStart, int itemCount) {
         for (int i = 0; i < itemCount; ++i) {
             Note note = notes.get(positionStart);
@@ -89,6 +94,8 @@ public class NotesAdapter extends SelectableAdapter<NotesAdapter.NoteVH>  {
         }
         notifyItemRangeRemoved(positionStart, itemCount);
     }
+
+
 
 
     @Override
