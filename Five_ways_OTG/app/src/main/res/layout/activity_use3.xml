@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.bhagat_singh_97.five_ways_otg.Use1">
+
+
+    <ImageView
+        android:layout_width="436dp"
+        android:layout_height="186dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/maxresdefault"
+        android:scaleType="centerInside"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use High-Speed Ethernet"
+        android:padding="10dp"
+        android:textSize="28dp"
+        android:textStyle="italic"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ever had problems connecting to a WiFi network ? Ever had any lousy friends refusing to tell you passwords?\n\nUSB OTG comes to the rescue! You can use your OTG cable to connect to an ethernet cable with the help of an adpater that looks like this."
+                android:textSize="18dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ethernet123"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Simply plug your OTG cable to your phone.Connect the adapter to the OTG cable and the ethernet cable to the adapter.That's it! Enjoy high speed internet,right in the palm of your hand!"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

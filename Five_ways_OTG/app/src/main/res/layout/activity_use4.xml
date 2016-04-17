@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.bhagat_singh_97.five_ways_otg.Use1">
+
+
+    <ImageView
+        android:layout_width="436dp"
+        android:layout_height="186dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/charge"
+        android:scaleType="centerInside"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charge from Another Device"
+        android:padding="10dp"
+        android:textSize="28dp"
+        android:textStyle="italic"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ever run out of juice at a critical moment? Ever wish you just had that more battery to do that task? \n\nWell with an OTG cable and your friend's phone , you can charge your device to get that extra juice. Simply plug your device to the end of the OTG cable plugged in your friend's device and see the magic !"
+                android:textSize="18dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a123"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitStart"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

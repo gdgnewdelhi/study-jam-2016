@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.bhagat_singh_97.five_ways_otg.Use1">
+
+
+        <ImageView
+            android:layout_width="436dp"
+            android:layout_height="186dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/use1"
+            android:scaleType="centerInside"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connect Peripherals"
+            android:padding="10dp"
+            android:textSize="28dp"
+            android:textStyle="italic"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Android’s open nature makes it easy to connect just about anything to it. If you want to use your tablet as a laptop, a keyboard and mouse is integral to the experience. You’ll be happy to know that Android works well with most wireless and wired keyboards and mice.
+\n\nI would recommend getting a wireless keyboard and mouse set with a unified receiver, since you will only have one USB connection.\nFor example, you should buy a standard plug-and-play wireless set that is compatible with all platforms. However, make sure you don’t buy something that requires accompanying software.
+Simply plug and play your peripheral with OTG Cable and you're good to go !
+"
+
+
+
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

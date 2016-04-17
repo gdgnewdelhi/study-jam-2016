@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bhagat_singh_97.five_ways_otg.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="5 Ways To Use Your OTG Cable"
+        android:id="@+id/textView1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:paddingBottom="20dp"/>
+
+    <Button
+        android:id="@+id/Button1"
+
+        android:text="Use 1 : Connecting Peripherals"
+        android:layout_margin="15dp"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/Button2"
+        android:text="Use 2 : Game Controller"
+        android:layout_margin="15dp"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/Button3"
+        android:text="Use 3 : Use Ethernet"
+        android:layout_margin="15dp"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/Button4"
+        android:text="Use 4 : Charge Another Phone"
+        android:layout_margin="15dp"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/Button5"
+        android:text="Use 5 : Browse External Media"
+        android:layout_margin="15dp"
+        android:layout_height="35dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bhagat_singh_97.five_ways_otg.Use2">
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/imageView2"
+    android:src="@drawable/use2"
+    android:scaleType="centerInside"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Controller"
+        android:textSize="28dp"
+        android:padding="10dp"
+        android:textStyle="italic" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="This section is for all the gamers out there! If you're pretty serious playing games on your android device and can't say no every time a friend challenges you for a bout,then this hack is perfect for you.\n\nThis hack uses a standard OTG cable and a game controller. You can use any game controller(although some don't work,but any reputed ones are fine). We'll be using the Xbox 360 Game Controller for this.\n\nSimply connect your device to OTG cable and it's other end to the game controller. \nSome games that work with game controllers are Asphalt 8, Modern Combat 5,Riptide GP, Sonic CD and Super Hexagon among many more. \n\nSo, what are you waiting for ? Grab your gear and conquer the world !"
+                android:textSize="18dp"
+                android:padding="5dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
