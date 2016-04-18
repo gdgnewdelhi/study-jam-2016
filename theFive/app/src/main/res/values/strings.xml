@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">GDG</string>
+    <string name="heading">theFive</string>
+    <string name="FireHeat">Fire Heat</string>
+
+    <string name="air_des" formatted="false">
+        The atmosphere of Earth is the layer of gases, commonly known as air, that surrounds the planet Earth and is
+        retained by Earth\'s gravity. The atmosphere protects life on Earth by absorbing ultraviolet solar radiation,
+        warming the surface through heat retention (greenhouse effect), and reducing temperature extremes between day
+        and night (the diurnal temperature variation).
+
+        By volume, dry air contains 78.09% nitrogen, 20.95% oxygen, 0.93% argon, 0.039% carbon dioxide, and small
+        amounts of other gases. Air also contains a variable amount of water vapor, on average around 1% at sea level,
+        and 0.4% over the entire atmosphere. Air content and atmospheric pressure vary at different layers, and air
+        suitable for use in photosynthesis by terrestrial plants and breathing of terrestrial animals is found only in
+        Earth\'s troposphere and in artificial atmospheres.
+
+        The atmosphere has a mass of about 5.15×1018 kg, three quarters of which is within about 11 km of the surface.
+        The atmosphere becomes thinner and thinner with increasing altitude, with no definite
+        boundary between the atmosphere and outer space. The Kármán line, at 100 km, or 1.57% of Earth\'s radius,
+        is often used as the border between the atmosphere and outer space. Atmospheric effects become noticeable during
+        atmospheric reentry of spacecraft at an altitude of around 120 km. Several layers can be distinguished
+        in the atmosphere, based on characteristics such as temperature and composition.
+    </string>
+
+
+    <string name="fire_des">
+        Fire is the rapid oxidation of a material in the exothermic chemical process of combustion, releasing heat,
+        light, and various reaction products. Slower oxidative processes like rusting or digestion are not included
+        by this definition.
+        
+        Fire is hot because conversion of the weak double bond in molecular oxygen, O2, to the stronger bonds in the
+        combustion products carbon dioxide and water releases energy (418 kJ per 32 g of O2); the bond energies of the
+        fuel play only a minor role here. At a certain point in the combustion reaction, called the ignition point,
+        flames are produced. The flame is the visible portion of the fire. Flames consist primarily of carbon dioxide,
+        water vapor, oxygen and nitrogen. If hot enough, the gases may become ionized to produce plasma. Depending on
+        the substances alight, and any impurities outside, the color of the flame and the fires intensity will be
+        different.
+    </string>
+
+
+    <string name="water_des" formatted="false">
+        Water (chemical formula: H2O) is a transparent fluid which forms the world\'s streams, lakes, oceans and rain,
+        and is the major constituent of the fluids of organisms. As a chemical compound, a water molecule contains one
+        oxygen and two hydrogen atoms that are connected by covalent bonds. Water is a liquid at standard ambient
+        temperature and pressure, but it often co-exists on Earth with its solid state, ice; and gaseous state, steam
+        (water vapor). It also exists as snow, fog, dew and cloud.
+
+        Water covers 71% of the Earth\'s surface. It is vital for all known forms of life. On Earth, 96.5% of the
+        planet\'s crust water is found in seas and oceans, 1.7% in groundwater, 1.7% in glaciers and the ice caps of
+        Antarctica and Greenland, a small fraction in other large water bodies, and 0.001% in the air as vapor, clouds
+        (formed of ice and liquid water suspended in air), and precipitation. Only 2.5% of this water is
+        freshwater, and 98.8% of that water is in ice (excepting ice in clouds) and groundwater. Less than 0.3% of all
+        freshwater is in rivers, lakes, and the atmosphere, and an even smaller amount of the Earth\'s freshwater
+        (0.003%) is contained within biological bodies and manufactured products. A greater quantity of water is
+        found in the earth\'s interior.
+    </string>
+
+
+    <string name="earth_des" formatted="false">
+        Earth (otherwise known as The World) is the third planet
+        from the Sun, the densest planet in the Solar System, the largest of the Solar System\'s four terrestrial
+        planets, and the only astronomical object known to harbor life.
+
+        According to radiometric dating and other sources of evidence, Earth was formed about 4.54 billion years
+        ago. Earth gravitationally interacts with other objects in space, especially the Sun and the Moon.
+        During one orbit around the Sun, Earth rotates about its own axis 366.26 times, creating 365.26 solar days or
+        one sidereal year. Earth\'s axis of rotation is tilted 23.4° away from the perpendicular of its orbital
+        plane, producing seasonal variations on the planet\'s surface with a period of one tropical year (365.24 solar
+        days). The Moon is Earth\'s only permanent natural satellite. Its gravitational interaction with Earth causes
+        ocean tides, stabilizes the orientation of Earth\'s rotational axis, and gradually slows Earth\'s rotational
+        rate.
+    </string>
+
+
+    <string name="space_des">
+        Space is the boundless three-dimensional extent in which objects and events have relative position and
+        direction. Physical space is often conceived in three linear dimensions, although modern physicists usually
+        consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of
+        space is considered to be of fundamental importance to an understanding of the physical universe.
+    </string>
+</resources>
