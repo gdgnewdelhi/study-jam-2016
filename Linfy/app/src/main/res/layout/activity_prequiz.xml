@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="What do you want to practice?"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <CheckBox android:id="@+id/cb_grammar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/grammar"
+            android:padding="15dp"
+            android:onClick="onSubSelect"/>
+
+        <CheckBox android:id="@+id/cb_synonym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/synonyms"
+            android:padding="15dp"
+            android:onClick="onSubSelect"/>
+
+        <CheckBox android:id="@+id/cb_antonym"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/antonyms"
+            android:padding="15dp"
+            android:onClick="onSubSelect"/>
+
+        <CheckBox android:id="@+id/cb_oddword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oddword"
+            android:padding="15dp"
+            android:onClick="onSubSelect"/>
+
+        <CheckBox android:id="@+id/cb_composition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/composition"
+            android:padding="15dp"
+            android:onClick="onSubSelect"/>
+
+        <CheckBox android:id="@+id/cb_oneword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oneword"
+            android:padding="15dp"
+            android:onClick="onSubSelect"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primary_dark">
+
+        <Button
+            android:id="@+id/qstartButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/start"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/icons"
+            android:textAllCaps="true"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    </RelativeLayout>
+
+</LinearLayout>

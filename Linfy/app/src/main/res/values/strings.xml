@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Linfy</string>
+    <string name="act_main">Improve English</string>
+    <string name="quiz_name">Quiz</string>
+    <string name="start">Start</string>
+    <string name="synonyms">Synonyms</string>
+    <string name="antonyms">Antonyms</string>
+    <string name="oneword">One Word Substitution</string>
+    <string name="grammar">Grammar</string>
+    <string name="composition">Composition</string>
+    <string name="oddword">Odd Word</string>
+</resources>

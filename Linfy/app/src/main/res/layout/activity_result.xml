@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+
+        <TextView
+            android:id="@+id/score_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="80sp"
+            android:text="00"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Points"
+            android:textSize="24sp"
+            android:layout_below="@+id/score_final"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Statistics"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="20dp"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/grammar_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/grammar_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Grammar"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/grammar_score"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="4/5"
+                        android:textSize="18sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/grammar_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:layout_below="@id/grammar_tx"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/synonyms_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/synonyms_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Grammar"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/synonyms_score"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="4/5"
+                        android:textSize="18sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/synonyms_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:layout_below="@id/synonyms_tx"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/antonyms_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/antonyms_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Grammar"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/antonyms_score"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="4/5"
+                        android:textSize="18sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/antonyms_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:layout_below="@id/antonyms_tx"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/oddword_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/oddword_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Grammar"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/oddword_score"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="4/5"
+                        android:textSize="18sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/oddword_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:layout_below="@id/oddword_tx"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/composition_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/composition_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Grammar"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/composition_score"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="4/5"
+                        android:textSize="18sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/composition_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:layout_below="@id/composition_tx"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/oneword_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:padding="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/oneword_tx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Grammar"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/oneword_score"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="4/5"
+                        android:textSize="18sp"/>
+
+                    <ProgressBar
+                        android:id="@+id/oneword_progress"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="50"
+                        android:layout_below="@id/oneword_tx"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
