@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.example.android.mcdonalds.contact">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="CONTACT US"
+                android:textSize="35sp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_horizontal" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="40dp"
+                android:onClick="home"
+                android:background="@drawable/home_button"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp">
+            <ImageButton
+                android:id="@+id/dialer"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/unnamed"
+                android:onClick="dial"/>
+            <ImageButton
+                android:id="@+id/email"
+                android:layout_width="140dp"
+
+                android:layout_height="140dp"
+                android:background="@drawable/images1"
+                android:layout_marginLeft="10dp"
+                android:onClick="email"
+                android:contentDescription="Email"
+                android:layout_toRightOf="@id/dialer"/>
+            <TextView
+                android:id="@+id/dial_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="call"
+                android:textAllCaps="true"
+                android:layout_below="@id/dialer"
+                android:textSize="40sp"
+                android:layout_marginLeft="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email"
+                android:textAllCaps="true"
+                android:layout_below="@id/email"
+                android:textSize="40sp"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/dial_text"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

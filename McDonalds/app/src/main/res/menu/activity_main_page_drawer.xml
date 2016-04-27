@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_order" android:icon="@drawable/food"
+            android:title="Order"
+            />
+        <item android:id="@+id/nav_food" android:icon="@drawable/menu"
+            android:title="Food" />
+        <item android:id="@+id/nav_contact" android:icon="@drawable/contact"
+            android:title="Contact Us" />
+        <item android:id="@+id/nav_rate" android:icon="@drawable/rate"
+            android:title="Rate Us" />
+    </group>
+
+
+
+</menu>

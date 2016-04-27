@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.weddingcardpg1.Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+    <ImageView
+
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/wed" />
+
+    <TextView
+        android:id="@+id/message_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/message_d"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="We Solicit Your Gracious Presence "
+        android:textAllCaps="true"
+        android:textColor="#C0C0C0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/message_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/occ_1"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="On The Auspicious Occasion Of The "
+        android:textAllCaps="true"
+        android:textColor="#C0C0C0"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/occ_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title_text_view"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=" Wedding Ceremony Of"
+        android:textAllCaps="true"
+        android:textColor="#C0C0C0"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/title_text_view"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#C0C0C0"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+
+        android:id="@+id/center"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="WITH"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/title_textg_view"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#C0C0C0"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/title_date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="#C0C0C0"
+        android:textStyle="bold"
+
+        />
+
+
+</RelativeLayout>

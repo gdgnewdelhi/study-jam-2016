@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewApple"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/apple"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementAppleButton"
+                            android:onClick="picDecrementApple"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewApple"
+                            android:id="@+id/picIncrementAppleButton"
+                            android:onClick="picIncrementApple"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/appleIncrement"
+                            android:onClick="appleInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/appleQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/appleDecrement"
+                            android:onClick="appleDec"/>
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewGrapes"
+                            android:src="@drawable/grapes"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementGrapesButton"
+                            android:onClick="picDecrementGrapes"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewGrapes"
+                            android:id="@+id/picIncrementGrapesButton"
+                            android:onClick="picIncrementGrapes"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/grapesIncrement"
+                            android:onClick="grapesInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/grapesQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/grpaesDecrement"
+                            android:onClick="grapesDec"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewBanana"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/banana"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementBananaButton"
+                            android:onClick="picDecrementBanana"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewBanana"
+                            android:id="@+id/picIncrementBananaButton"
+                            android:onClick="picIncrementBanana"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/bananaIncrement"
+                            android:onClick="bananaInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/bananaQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/bananaDecrement"
+                            android:onClick="bananaDec"/>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewOrange"
+                            android:src="@drawable/orange"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementOrangeButton"
+                            android:onClick="picDecrementOrange"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewOrange"
+                            android:id="@+id/picIncrementOrangeButton"
+                            android:onClick="picIncrementOrange"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/orangeIncrement"
+                            android:onClick="OrangeInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/orangeQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/orangeDecrement"
+                            android:onClick="OrangeDec"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewCherry"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/cherry" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementCherryButton"
+                            android:onClick="picDecrementCherry"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewCherry"
+                            android:id="@+id/picIncrementCherryButton"
+                            android:onClick="picIncrementCherry"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/cherryIncrement"
+                            android:onClick="cherryInc" />
+
+                        <TextView
+                            android:layout_width="00dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/cherryQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/cherryDecrement"
+                            android:onClick="cherryDec" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewpineapple"
+                            android:src="@drawable/pineapple" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementPineappleButton"
+                            android:onClick="picDecrementPineapple"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewpineapple"
+                            android:id="@+id/picIncrementPineappleButton"
+                            android:onClick="picIncrementPineapple"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/pineappleIncrement"
+                            android:onClick="pineappleInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/pineappleQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/pineappleDecrement"
+                            android:onClick="pineappleDec" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewPomegranate"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/pomegranate" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementPomegranateButton"
+                            android:onClick="picDecrementPomegranate"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewPomegranate"
+                            android:id="@+id/picIncrementPomegranateButton"
+                            android:onClick="picIncrementPomegranate"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/pomegranateIncrement"
+                            android:onClick="pomegranateInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/pomegranateQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/pomegranateDecrement"
+                            android:onClick="pomegranateDec" />
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewStrawberry"
+                            android:src="@drawable/strawberry" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementStrawberryButton"
+                            android:onClick="picDecrementStrawberry"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewStrawberry"
+                            android:id="@+id/picIncrementStrawberryButton"
+                            android:onClick="picIncrementStrawberry"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="+" android:id="@+id/strawberryIncrement"
+                            android:onClick="strawberryInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/strawberryQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/orange1Decrement"
+                            android:onClick="strawberryDec" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation = "horizontal"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="16dp"
+            android:text="Reset"
+            android:id="@+id/buttonMainMenu"
+            android:onClick="reset"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Price: "
+
+            android:textSize="20sp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="31dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:text = "Rs."
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:text = "0"
+            android:layout_weight="1"
+            android:id="@+id/totalPrice"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="1dp"
+            android:text="Check Out"
+            android:id="@+id/buttonCheckOut"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

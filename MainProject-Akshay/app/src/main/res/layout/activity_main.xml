@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageBackgroundView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/bg"
+        android:scaleType="centerCrop"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Number"
+        android:id="@+id/editTextNumber"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignStart="@+id/editTextName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:layout_marginTop="75dp"
+        android:id="@+id/editTextName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Developer"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:onClick="contactDeveloper"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/editTextNumber"
+        android:layout_alignStart="@+id/editTextNumber"
+        android:layout_marginBottom="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/buttonSignIN"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginTop="56dp"
+        android:onClick="signIn"/>
+
+</RelativeLayout>

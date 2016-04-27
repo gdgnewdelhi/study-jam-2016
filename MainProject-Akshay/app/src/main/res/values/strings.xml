@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">mainProjectV2</string>
+    <string name="title_activity_neww">neww</string>
+    <string name="title_activity_finalmap">finalmap</string>
+    <string name="title_activity_mainmenu">mainmenu</string>
+    <string name="title_activity_pricelist_fruits">pricelistFruits</string>
+    <string name="title_activity_sports">sports</string>
+    <string name="title_activity_pricelist_sports">pricelistSports</string>
+    <string name="title_activity_payment_option">PaymentOption</string>
+    <string name="title_activity_thank_you">ThankYou</string>
+</resources>

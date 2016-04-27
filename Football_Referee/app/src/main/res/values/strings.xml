@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Football Referee</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_goals">goals</string>
+    <string name="title_activity_goal_counter">goal_counter</string>
+    <string name="title_activity_yellow_card">yellow_card</string>
+    <string name="title_activity_red_card">red_card</string>
+</resources>

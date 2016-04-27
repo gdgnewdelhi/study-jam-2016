@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_goals" tools:context="com.example.vikram.footballrefree.goals">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cover2"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team 1"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/team1_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#59ffffff"
+            android:textSize="20dp"
+            android:hint="Team Name"
+            android:textColor="#80111111"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Team 2"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:textSize="22dp"/>
+
+        <EditText
+            android:id="@+id/team2_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#80ffffff"
+            android:textColor="#59111111"
+            android:textSize="20dp"
+            android:hint="Team Name"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_page2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next"
+        android:onClick="nextPage"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="#80ffffff"
+        android:layout_marginBottom="40dp"/>
+
+</RelativeLayout>

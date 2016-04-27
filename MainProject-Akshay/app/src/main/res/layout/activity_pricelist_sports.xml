@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price List"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"
+        android:id="@+id/textViewPriceListSports" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arsenal:              Rs.499/pc"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonArsenal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Barcelona:           Rs.499/pc"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonBarca" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chelsea:             Rs.499/pc"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonChelsea" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Man United:             Rs.499/pc"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonMobile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Real Madrid:             Rs.499/pc"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonClothes" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="India:             Rs.499/pc"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonSports" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Australia:             Rs.499/pc"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonBooks" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bayern Munich:             Rs.499/pc"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonFurniture" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Back To Sports"
+        android:id="@+id/buttonBackToSports"
+        android:onClick="backToSports"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width = "match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg">
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash On Delivery"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit card"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Credit card"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:text="NetBanking"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Paytm"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Google wallet"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:text="Other Online Wallets"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Order"
+            android:id="@+id/buttonConfirm"
+            android:textColor="@android:color/white"
+            android:onClick="ThankYou"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+</ScrollView>

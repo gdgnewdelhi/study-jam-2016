@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"
+        android:id="@+id/textViewWelcome" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fruits"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonFruits"
+        android:onClick="Fruits"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vegetable"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonVegetable" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Laptops"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonLaptops" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonMobile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clothes"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonClothes" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sports"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonSports" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Books"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonBooks" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Furniture"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonFurniture" />
+
+</LinearLayout>
+

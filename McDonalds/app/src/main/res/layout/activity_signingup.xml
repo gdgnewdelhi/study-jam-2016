@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff1100"
+    android:orientation="vertical"
+    >
+    <ProgressBar android:id="@+id/signUp_progress" style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="49sp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/name_sign_up" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Name"
+            android:textAllCaps="true"
+            android:imeOptions="actionUnspecified"
+            android:layout_margin="5dp"
+            android:maxLines="1" android:singleLine="true" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/contact_sign_up" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Contact No."
+            android:textAllCaps="true"
+            android:imeOptions="actionUnspecified"
+            android:layout_margin="5dp"
+            android:maxLines="1" android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/loginId_sign_up" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Login Id"
+            android:textAllCaps="true"
+            android:imeOptions="actionUnspecified"
+            android:layout_margin="5dp"
+            android:maxLines="1" android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText android:id="@+id/password_sign_up" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Password"
+            android:textAllCaps="true"
+            android:imeOptions="actionUnspecified"
+            android:layout_margin="5dp"
+            android:maxLines="1" android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:textAllCaps="true"
+        android:layout_margin="20dp"
+        />
+</LinearLayout>
+
+
+
+
+

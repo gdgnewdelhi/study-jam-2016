@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewArsenal"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/arsenal"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementArsenalButton"
+                            android:onClick="picDecrementArsenal"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewArsenal"
+                            android:id="@+id/picIncrementArsenalButton"
+                            android:onClick="picIncrementArsenal"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/ArsenalIncrement"
+                            android:onClick="ArsenalInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/ArsenalQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/ArsenalDecrement"
+                            android:onClick="ArsenalDec"/>
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewManUtd"
+                            android:src="@drawable/manutd"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementManUtdButton"
+                            android:onClick="picDecrementManUtd"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewManUtd"
+                            android:id="@+id/picIncrementManUtdButton"
+                            android:onClick="picIncrementManUtd"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/ManUtdIncrement"
+                            android:onClick="ManUtdInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/ManUtdQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/ManUtdDecrement"
+                            android:onClick="ManUtdDec"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewAustralia"
+                            android:layout_marginTop="8dp"
+                            android:src = "@drawable/australia"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementAustraliaButton"
+                            android:onClick="picDecrementAustralia"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewAustralia"
+                            android:id="@+id/picIncrementAustraliaButton"
+                            android:onClick="picIncrementAustralia"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+
+                        android:orientation = "horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="+"
+                            android:id="@+id/AustraliaIncrement"
+                            android:onClick="AustraliaInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="8dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/AustraliaQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/AustraliaDecrement"
+                            android:onClick="AustraliaDec"/>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewIndia"
+                            android:src="@drawable/india"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementIndiaButton"
+                            android:onClick="picDecrementIndia"
+                            android:background="@android:color/transparent"/>
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewIndia"
+                            android:id="@+id/picIncrementIndiaButton"
+                            android:onClick="picIncrementIndia"
+                            android:background="@android:color/transparent"/>
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/IndiaIncrement"
+                            android:onClick="IndiaInc"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:layout_weight="2"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/IndiaQuantity"/>
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:layout_weight="1"
+                            android:id="@+id/IndiaDecrement"
+                            android:onClick="IndiaDec"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewChelsea"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/chelsea" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementChelseaButton"
+                            android:onClick="picDecrementChelsea"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewChelsea"
+                            android:id="@+id/picIncrementChelseaButton"
+                            android:onClick="picIncrementChelsea"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/ChelseaIncrement"
+                            android:onClick="ChelseaInc" />
+
+                        <TextView
+                            android:layout_width="00dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/ChelseaQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/ChelseaDecrement"
+                            android:onClick="ChelseaDec" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewRealMadrid"
+                            android:src="@drawable/madrid" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementRealMadridButton"
+                            android:onClick="picDecrementRealMadrid"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewRealMadrid"
+                            android:id="@+id/picIncrementRealMadridButton"
+                            android:onClick="picIncrementRealMadrid"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/RealMadridIncrement"
+                            android:onClick="RealMadridInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/RealMadridQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/RealMadridDecrement"
+                            android:onClick="RealMadridDec" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:id="@+id/imageViewMunich"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/munich" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementMunichButton"
+                            android:onClick="picDecrementMunich"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewMunich"
+                            android:id="@+id/picIncrementMunichButton"
+                            android:onClick="picIncrementMunich"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="16dp"
+                            android:text="+"
+                            android:id="@+id/MunichIncrement"
+                            android:onClick="MunichInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/MunichQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/MunichDecrement"
+                            android:onClick="MunichDec" />
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_marginTop="8dp"
+                            android:id="@+id/imageViewBarca"
+                            android:src="@drawable/barca" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:id="@+id/picDecrementBarcaButton"
+                            android:onClick="picDecrementBarca"
+                            android:background="@android:color/transparent" />
+
+                        <Button
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/imageViewBarca"
+                            android:id="@+id/picIncrementBarcaButton"
+                            android:onClick="picIncrementBarca"
+                            android:background="@android:color/transparent" />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="+" android:id="@+id/BarcaIncrement"
+                            android:onClick="BarcaInc" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="16dp"
+                            android:text="0"
+                            android:textSize="25sp"
+                            android:paddingLeft="24dp"
+                            android:id="@+id/BarcaQuantity" />
+
+                        <Button
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:text="-"
+                            android:id="@+id/BarcaDecrement"
+                            android:onClick="BarcaDec" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation = "horizontal"
+        android:background="@android:color/holo_blue_bright">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="8dp"
+            android:text="PriceList"
+            android:id="@+id/buttonPriceList"
+            android:onClick="PriceList"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Price: "
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:layout_width="31dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:text = "Rs."
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:textSize="16sp"
+            android:text = "0"
+            android:layout_weight="1"
+            android:id="@+id/totalPrice"
+            android:paddingTop="8dp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="1dp"
+            android:text="Check Out"
+            android:onClick="checkOut"
+            android:id="@+id/buttonCheckOut"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

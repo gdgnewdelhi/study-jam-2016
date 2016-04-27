@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price List"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24sp"
+        android:id="@+id/textViewPriceListFruits" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apple:              Rs.150/Kg"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonApple" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banana:           Rs.60/Kg"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonVegetable" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cherry:             Rs.250Kg"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonLaptops" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grapes:             Rs.120/Kg"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonMobile" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oranges:             Rs.50/Kg"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonClothes" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pineapple:             Rs.250/Kg"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonSports" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pomegranate:             Rs.230/Kg"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonBooks" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Strawberry:             Rs.300/Kg"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/buttonFurniture" />
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Back To Fruits"
+        android:id="@+id/buttonBackToFruits"
+        android:onClick="backToFruits"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@android:color/transparent"/>
+
+</LinearLayout>

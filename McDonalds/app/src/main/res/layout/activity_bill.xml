@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.example.android.mcdonalds.bill">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_bill" />
+
+    <RelativeLayout
+        android:id="@+id/bill_print"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/bill"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="BILL"
+            android:textSize="30dp"
+
+            android:layout_marginLeft="10dp"
+            android:textColor="#ff000000"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:onClick="home"
+            android:background="@drawable/home_button"
+            />
+        <TextView
+            android:id="@+id/c_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer's Name:"
+            android:layout_below="@id/bill"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ff000000"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_below="@id/bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fggfdbb"
+            android:layout_toRightOf="@id/c_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="#ff000000"
+            />
+        <TextView
+            android:id="@+id/c_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer's Contact No.:"
+            android:layout_below="@id/c_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ff000000"
+
+            />
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="gdfhgfhfg"
+            android:textAllCaps="true"
+            android:layout_toRightOf="@id/c_no"
+            android:layout_below="@id/name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#ff000000"
+            />
+        <TextView
+
+            android:id="@+id/items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="items"
+            android:textAllCaps="true"
+            android:layout_below="@id/c_no"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/items"
+            android:background="#ff0000ff"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/c_no"
+            android:background="#ff0000ff"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="30dp"
+
+            android:layout_below="@id/items"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="qty"
+            android:textAllCaps="true"
+            android:layout_toRightOf="@id/items"
+            android:layout_below="@id/c_no"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="95dp"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/number"
+            android:background="#ff0000ff"
+            android:layout_toRightOf="@id/c_no"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="180dp"
+            />
+
+        <TextView
+            android:id="@+id/quantity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAllCaps="true"
+            android:layout_toRightOf="@id/item_value"
+            android:layout_below="@id/quantity"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:text="amount"
+            android:textAllCaps="true"
+            android:layout_toRightOf="@id/quantity"
+            android:layout_below="@id/c_no"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/number"
+            android:background="#ff0000ff"
+            android:layout_toRightOf="@id/quantity"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="180dp"
+            />
+
+        <TextView
+            android:id="@+id/price_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAllCaps="true"
+            android:layout_toRightOf="@id/quantity_value"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"/>
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:background="#ff0000ff"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="180dp"
+            />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="160dp"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="140dp"/>
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="120dp"/>
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"/>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="place order"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="order"/>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

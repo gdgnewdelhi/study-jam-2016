@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffff"
+    android:id="@+id/mainlayout"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"
+        android:background="#ffffff"
+        android:layout_above="@+id/currentlocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/currentlocation"
+        android:layout_marginBottom="86dp"
+        android:layout_above="@+id/viewall"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:background="@drawable/currentlocation"
+        android:onClick="onclick" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/viewall"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/currentlocation"
+        android:layout_alignStart="@+id/currentlocation"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/all"
+        android:onClick="onclick" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/power"
+        android:layout_alignTop="@+id/currentlocation"
+        android:layout_alignLeft="@+id/saved"
+        android:layout_alignStart="@+id/saved"
+        android:onClick="onclick" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/saved"
+        android:background="@drawable/saved"
+        android:layout_alignTop="@+id/viewall"
+        android:layout_centerHorizontal="true"
+        android:onClick="onclick" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/search"
+        android:layout_alignTop="@+id/power"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="@drawable/search"
+        android:onClick="onclick" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/add"
+        android:layout_alignTop="@+id/saved"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignStart="@+id/search"
+        android:background="@drawable/add"
+        android:onClick="onclick" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/search"
+        android:layout_toEndOf="@+id/search"
+        android:background="@drawable/info"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/info"
+        android:onClick="onclick" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Current location"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/power"
+        android:layout_alignLeft="@+id/currentlocation"
+        android:layout_alignStart="@+id/currentlocation"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="View All"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/viewall"
+        android:layout_alignEnd="@+id/viewall"
+        android:layout_below="@+id/saved"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Power"
+        android:id="@+id/textView4"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Search"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Add"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/add"
+        android:layout_alignLeft="@+id/add"
+        android:layout_alignStart="@+id/add"
+        android:singleLine="true"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BookMark"
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+</RelativeLayout>

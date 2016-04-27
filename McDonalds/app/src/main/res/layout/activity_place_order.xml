@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.android.mcdonalds.placeOrder">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="ORDER"
+                android:textSize="40sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="85dp"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="50dp"
+                android:onClick="home"
+                android:background="@drawable/home_button"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:id="@+id/burger"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:onClick="burger"
+                        android:text="Burgers"
+                        android:textSize="30sp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="80dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/burger_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="10dp">
+
+                            <CheckBox
+                                android:id="@+id/burger_box1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="McAloo Tikki"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+
+                                />
+
+                            <CheckBox
+                                android:id="@+id/burger_box2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Chicken McGrill"
+                                android:paddingLeft="10dp"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+
+                            <CheckBox
+                                android:id="@+id/burger_box3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="McVeggie"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+
+                            <CheckBox
+                                android:id="@+id/burger_box4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="McSpicy Paneer"
+                                android:textSize="20dp"
+                                android:paddingLeft="10dp"
+                                android:layout_marginTop="12dp"
+
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="30dp">
+                            <EditText
+                                android:id="@+id/burger_text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:hint="QTY"
+                                />
+                            <EditText
+                                android:id="@+id/burger_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/burger_text3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/burger_text4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/combo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:onClick="combo"
+                        android:text="Meals"
+                        android:textSize="30sp"
+
+                        android:layout_marginLeft="80dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/combo_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp">
+
+                            <CheckBox
+                                android:id="@+id/combo_box1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Spicy Meal"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+
+                                />
+                            <CheckBox
+                                android:id="@+id/combo_box2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Classic Meal"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/combo_box3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Fish and Grill"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/combo_box4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Extra Value Meal"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:id="@+id/combo_text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/combo_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/combo_text3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/combo_text4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dessert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:onClick="dessert"
+                        android:text="Desserts"
+                        android:textSize="30sp"
+                        android:layout_marginLeft="80sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/dessert_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            >
+
+                            <CheckBox
+                                android:id="@+id/dessert_box1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="McFlurry"
+                                android:textSize="20dp"
+                                android:layout_marginTop="10dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/dessert_box2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Soft Serve"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/dessert_box3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Walnut Brownie"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+
+                            <CheckBox
+                                android:id="@+id/dessert_box4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="McFloat"
+                                android:textSize="20dp"
+                                android:layout_marginTop="12dp"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp">
+                            <EditText
+                                android:id="@+id/dessert_text1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/dessert_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/dessert_text3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                            <EditText
+                                android:id="@+id/dessert_text4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="QTY"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TOTAL=      0"
+
+                    android:layout_marginTop="40dp"
+                    android:textSize="30dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="  order"
+                        android:onClick="total_order"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="  Proceed "
+                        android:onClick="bill_order"
+
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
