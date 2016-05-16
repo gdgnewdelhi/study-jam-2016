@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.android.tictactoe.game">
+
+    <include layout="@layout/content_game" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+
+        <ImageView
+            android:id="@+id/tic"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:src="@drawable/icon1" />
+
+
+        <LinearLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/tic"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Button1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+
+            <Button
+                android:id="@+id/Button2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <Button
+                android:id="@+id/Button3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#000000"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Button4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <Button
+                android:id="@+id/Button5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <Button
+                android:id="@+id/Button6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+        </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#000000"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Button7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <Button
+                android:id="@+id/Button8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="#000000"/>
+            <Button
+                android:id="@+id/Button9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="50dp"
+                android:onClick="click"/>
+        </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grid"
+            android:text=""
+            android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

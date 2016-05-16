@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ToDo</string>
+    <string name="main_btn_show_completed">Complete</string>
+    <string name="main_btn_show_incompleted">Incomplete</string>
+    <string name="main_btn_new_task">Add New Task</string>
+    <string name="Complete">Complete</string>
+</resources>

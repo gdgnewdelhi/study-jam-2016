@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_button1activity">button1activity</string>
+    <string name="title_activity_button2activity">button2activity</string>
+    <string name="title_activity_button3activity">button3activity</string>
+    <string name="title_activity_button4activity">button4activity</string>
+    <string name="title_activity_button5activity">button5activity</string>
+    <string name="title_activity_button6activity">button6activity</string>
+    <string name="title_activity_button1image">button1image</string>
+    <string name="title_activity_button2img">button2img</string>
+    <string name="title_activity_button3img">button3img</string>
+    <string name="title_activity_button3image">button3image</string>
+</resources>

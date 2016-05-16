@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/gridview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnWidth="90dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="30dp"
+    android:horizontalSpacing="30dp"
+    android:stretchMode="columnWidth"
+    android:gravity="center"
+    android:layout_margin="30dp"
+    tools:context="com.example.android.musicshop"
+    />

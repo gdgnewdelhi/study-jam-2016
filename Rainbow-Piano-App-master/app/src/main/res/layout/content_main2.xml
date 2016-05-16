@@ -1,0 +1,82 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main2"
+    tools:context=".beat_boxActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/beat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drum Beat 1"/>
+
+        <Button
+            android:id="@+id/beat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drum Beat 2"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+    
+        <Button
+            android:id="@+id/beat3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drum Beat 3"/>
+
+    
+        <Button
+            android:id="@+id/beat4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drum Beat 4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/beat5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dubstep Beat 1"/>
+
+        <Button
+            android:id="@+id/beat6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dubstep Beat 2"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
