@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">First</string>
+
+    <string-array name="Start_Stations">
+        <item>DELHI</item>
+        <item>MUMBAI</item>
+        <item>KOLKATA</item>
+        <item>PUNJAB</item>
+        <item>JAMMU</item>
+        <item>RAJASTHAN</item>
+        <item>HARYANA</item>
+        <item>GUJRAT</item>
+    </string-array>
+
+    <string-array name="End_Stations">
+        <item>DELHI</item>
+        <item>MUMBAI</item>
+        <item>KOLKATA</item>
+        <item>PUNJAB</item>
+        <item>JAMMU</item>
+        <item>RAJASTHAN</item>
+        <item>HARYANA</item>
+        <item>GUJRAT</item>
+    </string-array>
+
+    <string-array name="Capacity">
+        <item>AC</item>
+        <item>NON AC</item>
+        <item>GENERAL</item>
+        <item>SLIPPER</item>
+        <item>PASSENGER</item>
+    </string-array>
+</resources>

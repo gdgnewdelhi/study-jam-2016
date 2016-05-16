@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <string name="action_settings">Sort by Ratings</string>
+    <string name="action_sort">Sort by Popularity</string>
+    <string name="title_activity_details">Movie Details</string>
+    <string name="Poster">Poster</string>
+    <string name="Title">Title</string>
+    <string name="action_share">Share</string>
+    <string name="action_fav">Favourites</string>
+    <string name="add_fav">Added to Favourites</string>
+    <string name="message">Sent via Popular Movies app</string>
+    <string name="rem_fav">Removed from Favourites</string>
+    <string name="OverView">OverView</string>
+    <string name="Backdrop">Backdrop</string>
+    <string name="sort_rat">Sorted by Ratings</string>
+    <string name="sort_pop">Sorted by Popularity</string>
+    <string name="no_net">No Network Connection</string>
+    <string name="activity_image_trans">activity_image_transition</string>
+    <string name="Rating">Rating</string>
+    <string name="ReleaseDate">ReleaseDate</string>
+    <string name="transition_string">transition</string>
+</resources>

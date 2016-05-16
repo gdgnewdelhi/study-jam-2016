@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="final_project.pranav.piano" >
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Rainbow Piano"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Rainbow Piano"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".pianoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="final_project.pranav.piano" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name=".beat_boxActivity"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:screenOrientation="landscape" >
+        <intent-filter>
+            <action android:name="final_project.pranav.beat_box" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    </application>
+
+</manifest>

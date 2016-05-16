@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.kanastrokes" >
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/kana_1"
+        android:label="Kana"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="Kana"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Hiragana_1"
+            android:label="@string/title_activity_hiragana_1"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.kanastrokes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Katakana_1"
+            android:label="@string/title_activity_katakana_1"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.kanastrokes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Hiragana_2"
+            android:label="@string/title_activity_hiragana_2"
+            android:parentActivityName=".Hiragana_1"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.kanastrokes.Hiragana_1" />
+        </activity>
+        <activity
+            android:name=".Katakana_2"
+            android:label="@string/title_activity_katakana_2"
+            android:parentActivityName=".Katakana_1"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.kanastrokes.Katakana_1" />
+        </activity>
+    </application>
+
+</manifest>

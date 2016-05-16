@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarWidgetTheme">@style/Theme.AppCompat.CustomShareIcon</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.AppCompat.CustomShareIcon</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlowStyle</item>
+    </style>
+
+    <style name="OverFlowStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_sort_white_24dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="actionBarWidgetTheme">@style/Theme.AppCompat.CustomShareIcon</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.AppCompat.CustomShareIcon</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.AppCompat.CustomShareIcon" parent="@style/Theme.AppCompat">
+        <item name="actionModeShareDrawable">@drawable/ic_share_white_24dp</item> <!-- your icon goes here -->
+    </style>
+</resources>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/bckgrnd_1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.kana.hiragana_1"
+    tools:showIn="@layout/app_bar_hiragana_1">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/hira_a"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_a"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ka"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ka"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_sa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_sa"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ta"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ta"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_na"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_na"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ha"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ha"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ma"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ma"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ya"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ya"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ra"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ra"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_wa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_wa"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_n"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_n"
+            android:clickable="true"
+            android:onClick="next"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/hira_i"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_i"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ki"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ki"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_shi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_shi"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_chi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_chi"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ni"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ni"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_hi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_hi"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_mi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_mi"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/hira_ri"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ri"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_wi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_wi"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/hira_u"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_u"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ku"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ku"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_su"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_su"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_tsu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_tsu"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_nu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_nu"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_fu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_fu"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_mu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_mu"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_yu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_yu"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ru"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ru"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/hira_e"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_e"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ke"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ke"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_se"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_se"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_te"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_te"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ne"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ne"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_he"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_he"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_me"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_me"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/hira_re"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_re"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_we"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_we"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/hira_o"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_o"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ko"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ko"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_so"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_so"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_to"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_to"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_no"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_no"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ho"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ho"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_mo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_mo"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_yo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_yo"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_ro"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_ro"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:id="@+id/hira_wo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/hira_wo"
+            android:clickable="true"
+            android:onClick="next"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>
